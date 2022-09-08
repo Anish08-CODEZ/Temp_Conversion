@@ -81,6 +81,25 @@ public class Main {
 
 					break;
 
+				case 4:
+					System.out.println(COLOR_CYAN + "FARENHEIT - CELSIUS" + COLOR_RESET);
+
+					System.out.println(" ");
+					System.out.print("Enter your FARENHEIT value: ");
+
+					double temp_Faren = input.nextDouble();
+					double change_Cel_2 = (temp_Faren - 32) * 5 / 9;
+
+					System.out.println(COLOR_GREEN + "➡ Temperature in FARENHEIT is: " + change_Cel_2 + COLOR_RESET);
+
+					break;
+
+				case 5:
+					System.out.println(COLOR_CYAN + "KELVIN - FARENHEIT" + COLOR_RESET);
+
+					System.out.println(" ");
+					System.out.print("Enter your KELVIN value: ");
+
 				default:
 					System.out.println(COLOR_RED + "You entered a wrong choise" + COLOR_RESET);
 			}
