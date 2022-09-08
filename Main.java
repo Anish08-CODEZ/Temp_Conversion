@@ -13,6 +13,8 @@ public class Main {
 	// Custom declaration
 	public static final String COLOR_BLUE = "	\u001B[34m";
 	public static final String COLOR_GREEN = "\u001B[32m";
+	public static final String COLOR_CYAN = "\u001B[36m";
+	public static final String COLOR_RED = "\u001B[31m";
 
 	public static void main(String[] args) {
 		System.out.println("We welcome you to our Temperature Conversion PROGRAM! 🙋‍♂️");
@@ -39,7 +41,7 @@ public class Main {
 		do {
 			switch (user_Inp) {
 				case 1:
-					System.out.println("KELVIN - CELSIUS");
+					System.out.println(COLOR_CYAN + "KELVIN - CELSIUS" + COLOR_RESET);
 					System.out.println(" ");
 					System.out.print("Enter your KELVIN value: ");
 
@@ -53,7 +55,7 @@ public class Main {
 					break;
 
 				case 2:
-					System.out.println("CELSIUS - KELVIN");
+					System.out.println(COLOR_CYAN + "CELSIUS - KELVIN" + COLOR_RESET);
 
 					System.out.println(" ");
 					System.out.print("Enter your CELSIUS value: ");
@@ -67,7 +69,7 @@ public class Main {
 					break;
 
 				case 3:
-					System.out.println("CELSIUS - FARENHEIT");
+					System.out.println(COLOR_CYAN + "CELSIUS - FARENHEIT" + COLOR_RESET);
 
 					System.out.println(" ");
 					System.out.print("Enter your CELSIUS value: ");
@@ -80,7 +82,7 @@ public class Main {
 					break;
 
 				default:
-					System.out.println("You entered a wrong choise");
+					System.out.println(COLOR_RED + "You entered a wrong choise" + COLOR_RESET);
 			}
 
 			System.out.println();
