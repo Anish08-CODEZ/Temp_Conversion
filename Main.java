@@ -142,6 +142,6 @@ public class Main {
 
 			System.out.print("\n" + "Enter your choice: ");
 			user_Inp = input.nextInt();
-		} while (user_Inp <= 10);
+		} while (user_Inp < 10);
 	}
 }
